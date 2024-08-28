@@ -25,7 +25,7 @@ function App() {
           value={location}
           onChange={event => setLocation(event.target.value)}
           onKeyPress={searchLocation}
-          placeholder='Introduce la localizacion'
+          placeholder='Introduce la localización'
           type="text" />
       </div>
       <div className="container">
@@ -45,7 +45,7 @@ function App() {
           <div className="bottom">
             <div className="feels">
               {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°C</p> : null}
-              <p>Sensacion</p>
+              <p>Sensación</p>
             </div>
             <div className="humidity">
               {data.main ? <p className='bold'>{data.main.humidity}%</p> : null}
